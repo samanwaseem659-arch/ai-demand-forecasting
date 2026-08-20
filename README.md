@@ -32,6 +32,38 @@ This project addresses these challenges by combining **data preprocessing, deman
 
 ---
 
+## 🏭 Industry Use Case
+
+This platform can be used in industries where accurate demand forecasting
+and inventory planning are important, including:
+
+* Retail
+* E-commerce
+* Grocery and supermarkets
+* Consumer goods
+* Warehousing and distribution
+* Manufacturing
+* Pharmaceutical inventory management
+
+The system helps businesses estimate future demand and identify potential
+stockout and overstock conditions.
+
+---
+## 🎯 Project Objectives
+
+The main objectives of the project are:
+
+* Predict future product demand using machine learning.
+* Analyze historical demand trends and patterns.
+* Compare different forecasting models.
+* Identify products with increasing or decreasing demand.
+* Detect potential stockout and overstock risks.
+* Estimate appropriate inventory levels.
+* Provide inventory recommendations based on forecasted demand.
+* Present results through an interactive Streamlit dashboard.
+
+---
+
 ## ✨ Key Features
 
 ### 📊 Data Processing
@@ -462,7 +494,6 @@ Recommended screenshots include:
 ```text
 assets/screenshots/
 ├── dashboard.png
-├── demand-trends.png
 ├── demand-patterns.png
 ├── forecasting.png
 ├── inventory-analysis.png
@@ -493,7 +524,7 @@ assets/screenshots/
 ## 1. Clone the Repository
 
 ```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
+git clone https://github.com/samanwaseem659-arch/ai-demand-forecasting.git
 ```
 
 Move into the project directory:
@@ -640,6 +671,91 @@ Possible future improvements include:
 
 ---
 
+# 🚀 Deployment
+
+The application is developed using Streamlit and can be run locally or deployed to a cloud-based application hosting platform.
+
+## Local Deployment
+
+After installing the project dependencies, run:
+
+```bash
+streamlit run app.py
+```
+
+The application will open in a web browser and provide access to the interactive demand forecasting and inventory optimization dashboard.
+
+## Deployment Status
+
+The project has been tested successfully with local Streamlit execution.
+
+Cloud deployment can be added using a platform that supports Streamlit applications.
+
+---
+
+# 🤗 Hugging Face Deployment
+
+The project is designed to support deployment through Hugging Face Spaces using Streamlit.
+
+A Hugging Face deployment can use:
+
+* `app.py` as the main application
+* `requirements.txt` for Python dependencies
+* `assets/` for screenshots and visual assets
+* `src/` for data processing and machine-learning modules
+* `models/` for the trained forecasting model
+
+## Current Status
+
+The project is prepared for Hugging Face deployment but is **not currently deployed to a Hugging Face Space**.
+
+**Hugging Face Space:** Not deployed yet.
+
+---
+
+# 🐙 GitHub
+
+The complete project source code and documentation are maintained in the GitHub repository.
+
+**Repository:**
+
+https://github.com/samanwaseem659-arch/ai-demand-forecasting
+
+The repository contains:
+
+* Streamlit application
+* Data-processing pipeline
+* Machine-learning modules
+* Trained forecasting model
+* Forecasting outputs
+* Inventory-analysis outputs
+* Documentation
+* Tests
+* Screenshots
+* Project license
+* Dependency configuration
+
+Git Large File Storage (Git LFS) is used for the large trained model artifact.
+
+---
+---
+
+# ⚠️ Limitations
+
+The current version of the platform has the following limitations:
+
+* Forecast accuracy depends on the quality and quantity of historical data.
+* The current system primarily uses Random Forest for final demand forecasting.
+* Advanced deep-learning time-series models such as LSTM and GRU are not currently implemented.
+* Real-time external market and competitor data integration is not currently available.
+* Inventory recommendations depend on the available inventory and demand information.
+* Automated real-time inventory monitoring is not currently implemented.
+* Automated reorder alerts are not currently implemented.
+* The application has been tested with local Streamlit execution.
+* Hugging Face cloud deployment has been prepared but has not yet been completed.
+
+---
+
 # 🎯 Project Outcome
 
 This project demonstrates a complete machine-learning solution for a real-world business problem.
@@ -672,6 +788,3 @@ The ultimate objective is to help businesses make more informed inventory decisi
 
 AI Demand Forecasting & Smart Inventory Optimization Platform
 
----
-
-⭐ If you find this project useful, consider giving the repository a star.
